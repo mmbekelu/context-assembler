@@ -1,6 +1,6 @@
 # sources.py
 # Raw input sources for the Context Builder pipeline
-# No logic allowed in this file
+# This file ONLY stores data (no logic)
 
 SOURCES = [
     {

@@ -1,7 +1,6 @@
 # test_runner.py
 # Validates the final assembled context
 
-
 MAX_CONTEXT_LENGTH = 2000
 
 REQUIRED_HEADERS = [
@@ -36,3 +35,20 @@ def run_tests(final_context):
         all_passed = False
 
     return all_passed
+
+
+# ✅ This lets you run: python test_runner.py
+if __name__ == "__main__":
+    demo_context = (
+        "## CONTEXT SOURCES\n"
+        "- Demo Source\n\n"
+        "## KEY EXTRACTS\n"
+        "• Demo extract text\n\n"
+        "## FINAL CONTEXT\n"
+        "Demo final context text\n"
+    )
+
+    print("Running test_runner.py directly...\n")
+    passed = run_tests(demo_context)
+
+    print("\nRESULT:", "PASS ✅" if passed else "FAIL ❌")
