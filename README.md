@@ -1,8 +1,9 @@
--Context-Builder-Prompt-Assembler-
-
+context-assembler
 README.txt
+===============
 
 PROJECT OVERVIEW
+----------------
 This project is a Context Builder and Prompt Assembler designed to prepare
 clean, relevant, and structured context before it is sent to an AI model.
 
@@ -17,7 +18,7 @@ The goal is to control and protect AI inputs using rules instead of guesses.
 
 
 FILE STRUCTURE
-
+--------------
 main.py
 Orchestrates the entire pipeline. It runs each step in order, checks for
 failure conditions, and stops the system safely when rules are violated.
@@ -44,7 +45,7 @@ length limits, and returns PASS or FAIL.
 
 
 HOW THE SYSTEM WORKS
-
+-------------------
 1. Raw sources are loaded from sources.py
 2. Text is cleaned and normalized
 3. Relevant sources are selected using keyword rules
@@ -54,8 +55,9 @@ HOW THE SYSTEM WORKS
 
 
 WHY THIS PROJECT MATTERS
-
+-----------------------
 AI systems are sensitive to input quality.
+
 This project demonstrates how to:
 - enforce rules before AI execution
 - reduce irrelevant or harmful context
@@ -66,10 +68,9 @@ This mirrors real-world Context Engineering and AI safety pipelines.
 
 
 HOW TO RUN
-
+----------
 Run the full pipeline:
 python main.py
 
 Run tests directly (optional):
 python test_runner.py
-
