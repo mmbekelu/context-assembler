@@ -1,6 +1,5 @@
 context-assembler
-README.txt
-===============
+=================
 
 PROJECT OVERVIEW
 ----------------
@@ -54,9 +53,23 @@ HOW THE SYSTEM WORKS
 6. A safe, predictable context is produced and ready to be sent to an AI model
 
 
+EXAMPLE FAILURE
+---------------
+Input Sources:
+- Source A: empty text
+- Source B: unrelated topic
+- Source C: short but valid content
+
+Result:
+- Empty and irrelevant sources are removed
+- Remaining content fails minimum context requirements
+- Context block is NOT assembled
+- System stops safely before any AI usage
+
+
 WHY THIS PROJECT MATTERS
 -----------------------
-AI systems are sensitive to input quality.
+AI systems are extremely sensitive to input quality.
 
 This project demonstrates how to:
 - enforce rules before AI execution
